@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Labb1</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="Menu"> 
+		<h1 id="rubrik">Beställ ditt visitkort här:</h1>
+		<p>
+			Företag ... <input type="text" name="company" id="company" class="input">
+		</p>
+		<p>
+			Efternamn ... <input type="text" name="LName" id="LName" class="input">
+		</p>
+		<p>
+			Förnamn ... <input type="text" name="FName" id="FName" class="input">
+		</p>
+		<p>
+			Titel ... <input type="text" name="Title" id="Title" class="input">
+		</p>
+		<p>
+			Telefon ... <input type="number" name="Telefon" id="Telefon" class="input">
+		</p>
+		<p>
+			E-post ... <input type="email" name="Mail" id="Mail" class="input">
+		</p>
+		<p>
+			Bakgrundsfärg ... 	
+			<select id="backgroundC" class="selected"> <!-- Option for background color -->
+				<option value="LightBlue">Ljusblå</option>
+				<option value="LightYellow">Ljusgul</option>
+				<option value="White">Vit</option>
+				<option value="Turquoise">Turkos</option>
+			</select>
+		</p>
+		<p>
+			Textfärg ... 
+			<select id="TextC" class="selected"> <!-- Option for text color -->
+				<option value="Black">Svart</option>
+				<option value="Blue">Blå</option>
+				<option value="Red">Röd</option>
+				<option value="DarkGreen">Mörkgrön</option>
+			</select>
+		</p>
+		<p>
+			Typsnitt ...
+			<select id="Fonts" class="selected"> <!-- Option for text font -->
+				<option value="Verdana">Verdana</option>
+				<option value="Ariel">Ariel</option>
+				<option value="Tahoma">Tahoma</option>
+				<option value="Impact">Impact</option>
+			</select>
+		</p>
+		<button id="Rbutton">Nollställ</button> <!-- Reset input -->
+		<button id="Sbutton">Skriv Ut</button> <!-- Submit input and create Visitkortet -->
+	</div>
+
+	<div id="Result"> <!-- Visitkort -->
+		<p id="_Company"></p>
+		<p id="_Name"></p>
+		<p id="_Title"></p>
+		<p id="_Telefon"></p>
+		<p id="_Mail"></p>
+		<br>
+		<button id="backButton">Återvänd</button> <!-- Return back to Menu -->
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
+
+</html>
